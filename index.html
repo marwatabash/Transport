@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    header{
+  display: flex;
+  align-items: center;
+  background-color: rgb(25, 25, 80);
+  color: white;
+  justify-content:space-evenly;
+}
+.contact{
+  display: flex;
+  margin: 30px;
+}
+.contact div{
+  margin: 20px;
+}
+
+div.icon i{
+  border: solid 2px rgb(78, 78, 151);
+  border-radius: 70%;
+  background-color: rgb(40, 40, 109);
+  padding: 13px;
+  margin: 20px;
+  color: rgb(154, 154, 50);
+  width: 30px;
+  text-align: center;
+}
+section.home{
+  background-image: url("images/home.webp");
+}
+nav{
+  background-color: rgba(85, 84, 84,0.3);
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content:space-evenly;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li{
+text-align: center;
+  padding: 10px;
+  margin: 4px;
+  margin-right: 20px;
+}
+.vl{
+  border-right: solid 1px rgb(163, 162, 162);
+  height: 20px;
+  margin-top: 12px;
+}
+.home div i{
+  margin: 8px;
+  font-size: 20px;
+}
+.main{
+  margin-left: 360px;
+  margin-top: 160px;
+  margin-bottom: 30px;
+}
+.main p{
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  border-left:solid 4px yellow ;
+  background-color: rgba(25, 24, 24, 0.4);
+}
+.main h1{
+  margin-top: -5px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.main pre{
+  margin-top: -20px;
+  line-height: 20px;
+  color: white;
+}
+.main button{
+  padding: 10px;
+  width: 150px;
+  background-color: yellow;
+  border: none;
+  margin-bottom: 200px;
+}
+@media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      .contact {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .icon {
+        margin: 10px;
+      }
+
+      .main {
+        margin: 20px;
+      }
+
+      .main h1 {
+        font-size: 30px;
+      }
+    }
+    .page-2{
+      display: flex;
+      justify-content:space-evenly;
+    }
+    .Right{
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      margin: 10px;
+      margin-right: 20px;
+      justify-content: space-between;
+      font-size: 17px;
+    }
+    .Left p{
+      display: inline-block;
+      padding: 3px 13px;
+      border-left:solid 4px yellow ;
+      background-color: rgba(25, 24, 24, 0.1);
+    }
+    .Left h2{
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    /* .Right div{
+      padding: 5px;
+    } */
+    .Right p{
+      color: rgb(137, 132, 132);
+    }
+    .page-3 h2{
+      text-align: center;
+      margin-top: 30px;
+    }
+    .page-3 .div{
+      width: 100%;
+      margin-top: 170px;
+      position: relative;
+      height: 200px;
+      background-color: rgb(235, 196, 98);
+      align-content: center;
+    }
+    .page-3 .div-1{
+      position: absolute;
+      /* bottom:  150px;
+      right: 15px; */
+      bottom: 70%;
+      left:26%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .page-3 .div-1 img{
+      margin-right: 13px;
+    }
+    .page-3 button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 8px 20px;
+      border: none;
+      background-color: rgb(20, 20, 64);
+      color: white;
+      cursor: pointer;
+    }
+    .page-4 {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .page-4 p{
+      display: inline-block;
+      padding: 3px 13px;
+      font-size: 10px;
+      border-left:solid 4px yellow ;
+      background-color: rgba(25, 24, 24, 0.1);
+    }
+    .page-4 h2{
+      margin-top: -2px;
+      font-weight: bold;
+    }
+    .er{
+      display: flex;
+      justify-content: space-evenly;
+    }
+   .page-4 .img{
+      position: relative;
+    }
+    .name{
+      position: relative;
+      margin-top: -50px;
+      background-color: rgb(20, 20, 64);
+      color: white;
+      text-align: start;
+      padding: 1px 12px;
+    }
+    .name pre{
+      margin-top: -20px;
+      font-size: 13px;
+    }
+    .cont{
+      background-color: rgb(235, 196, 98);
+      position: absolute;
+      bottom: 50px;
+      right:  0%;
+      color: rgb(20, 20, 64);
+      padding: 10px 20px;
+      margin: 5px;
+    }
+    .cont i{
+      margin-right: 6px;
+    }
+    .blue{
+      
+      width: 500px;
+      height: 400px;
+      background-color: rgb(20, 20, 64);
+      position: relative;
+    }
+    .plat{
+      position: absolute;
+      left: 30%;
+      top: 20%;
+    }
+    .text{
+      width: 200px;
+      z-index: 100;
+      position: absolute;
+      left: 30%;
+      top: 70%;
+      padding: 3px 10px;
+      text-align: center;
+      background-color: rgb(235, 196, 98);
+      color: black;
+    }
+    .page-5{
+      display: flex;
+      margin-top: 50px;
+      justify-content:baseline;
+      
+    }
+   #text{
+    width: 80px;
+      padding: 3px 13px;
+      font-size: 10px;
+      border-left:solid 4px yellow ;
+      background-color: rgba(25, 24, 24, 0.1);
+   }
+   .p-2{
+    margin-left: 80px;
+    margin-top: 80px;
+   }
+   .p-2 h3{
+    font-weight: bold;
+   }
+   #last{
+    margin-top: -9px;
+    color: rgb(138, 134, 134);
+   }
+   .grid{
+    display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px;
+   }
+   .grid div p{
+    width: 200px;
+    display: inline-block;
+   }
+   .grid div i{
+    background-color: rgb(235, 196, 98);
+    border-radius: 70%;;
+  padding: 15px;
+  margin-right: 20px;
+  width: 10px;
+  display: inline;
+  
+   }
+   footer{
+    background-color: rgb(20, 20, 64);
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+   }
+   .f-2 ul{
+    display: flex;
+    justify-content: space-around;
+   }
+   .f-2 ul li{
+    list-style: none;
+    margin-left: 20px;
+    color: rgb(173, 166, 166);
+   }
+   .logo{
+    display: flex;
+    justify-content: space-between;
+
+   }
+   .logo img{
+    margin-right: 3px;
+  }
+  nav button{
+    padding: 30px 40px;
+  }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp"width="20px"height="20px">
+      <h3 style="font-size: 20px; margin-top: -1px;">TransitFlow</h3>
+    </div>
+    <div class="contact">
+      <div class="icon">
+        <i class="fa fa-clock-o" style="font-size:24px"></i>
+        <pre style="display: inline-block;">Mon - Sat 9.00-18.00
+Sunday Closed</pre><br>
+      </div>
+      <div class="icon">
+        <i class="fa fa-envelope" style="font-size:24px"></i>
+        <pre style="display: inline-block;">Email
+contact@logistics.com</pre><br>
+      </div>
+    <div class="icon">
+      <i class="fa fa-phone" style="font-size:24px"></i>
+      <pre style="display: inline-block;">Call Us 
+(00)112 365 489</pre>
+    </div>
+  </div>
+  </header>
+  <section class="home">
+    <nav>
+      <ul>
+        <li>Home</li><div class="vl"></div>
+        <li>About</li><div class="vl"></div>
+        <li>Pages</li><div class="vl"></div>
+        <li>Projects</li><div class="vl"></div>
+        <li>contact</li>
+      </ul>
+      <div>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin-square"></i>
+      </div>
+      <button>Request Qoute</button>
+    </nav>
+    <div class="main">
+    <p>Logistics & Supply Chain Solutions</p>
+    <h1>Your Gateway <br>to any Destination <br>in the World</h1>
+    <pre>In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu 
+no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim 
+diam interdum nulla, sed laoreet risus lectus.</pre>
+    <button>Explore More</button></div>
+  </section>
+  <div class="page-2">
+    <div class="Left">
+    <p>What We Do</p>
+    <h2>Safe & Reliable<br>Cargo Solutions</h2>
+  </div>
+    <div class="Right">
+      <div>
+        <!-- <img src="images/air.jpg"width="100px"> -->
+        <h4>Sea Transport Services</h4>
+        <p>Following the quality of our service<br> thus having gained trust of our<br> many clients.</p>
+      </div>
+      <div>
+        <h4>Air Fright Services</h4>
+        <p>Following the quality of our service<br> thus having gained trust of our<br> many clients.</p>
+      </div>
+      <div>
+        <h4>Sea Transport Services</h4>
+        <p>Following the quality of our service<br> thus having gained trust of our<br> many clients.</p></div>
+        <div>
+          <h4>Air Fright Services</h4>
+          <p>Following the quality of our service<br> thus having gained trust of our<br> many clients.</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-3">
+      <h2>Transporting Across The Word</h2>
+      <div class="div">
+        <div class="div-1">
+        <img src="images/transport-1.webp"width="150px"height="200px">
+        <img src="images/transport-2.webp"width="150px"height="200px">
+        <img src="images/transport-3.webp"width="150px"height="200px">
+        <img src="images/transport-4.webp"width="150px"height="200px">
+        <img src="images/transport-5.webp" width="150px"height="200px">
+        </div>
+        <button>More Work</button>
+      </div>
+    </div>
+    <div class="page-4">
+      <p>The Transporters</p>
+      <h2>Meet Explore Team</h2>
+      <div class="er">
+        <div>
+          <div class="img">
+          <img src="images/team-1.webp" width="250px"height="300px"></div>
+          <div class="name">
+            <h4>Jassca Arow</h4>
+            <pre>Designer</pre>
+            <div class="cont">
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook-f"></i>
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+          
+        </div>
+        <div>
+          <img src="images/team-2.webp"width="250px"height="300px" class="img">
+          <div class="name">
+            <h4>Jassca Arow</h4>
+            <pre>Designer</pre>
+            <div class="cont">
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook-f"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-linkedin-square"></i>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/team-3.webp"width="260px"height="300px" class="img"> 
+          <div class="name">
+            <h4>Jassca Arow</h4>
+            <pre>Designer</pre>
+            <div class="cont">
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook-f"></i>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="page-5">
+      <div class="p-1">
+        <div class="blue">
+          <div class="plat"><img src="images/plane-2.webp" width="400px">
+          <div class="text">
+            <p>Move Your Proudects <br>acrosse border</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2">
+        <p id="text">Why Choose</p>
+        <h3>We create opportunity to <br>search potential</h3>
+        <p id="last">Leverage agile frameworks to rerovide a robust synopsis for<br> strategy foster collaborative thinking to further the overall value <br> proposition.</p>
+        <div class="grid">
+          <div>
+            <i class="fa fa-clock-o"></i>
+            <p >Safe Pacage</p>
+          </div>
+          <div>
+            <i class="fa fa-clock-o"></i>
+            <p>Ship Everywer</p>
+          </div>
+          <div>
+            <i class="fa fa-internet-explorer"></i>
+            <p>Global Tracking</p>
+          </div>
+          <div>
+            <i class="fa fa-headphones"></i>
+            <p>24\7 Support</p>
+          </div>
+          <div>
+            <i class="fa fa-clock-o"></i>
+            <p>In Time Delivery</p>
+          </div>
+          <div>
+            <i class="fa fa-clock-o"></i>
+            <p>Transparent Pricing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="f-1">
+        <p>Copyright &copy; TransitFlow I Designed by VictorFlow - Powered by Webflow.</p>
+      </div>
+      <div class="f-2">
+        <ul>
+        <li>Style Guide</li>
+        <li>Licenses</li>
+        <li>Changelog</li>
+        <li>Password</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

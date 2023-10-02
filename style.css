@@ -1,0 +1,85 @@
+header{
+  display: flex;
+  align-items: center;
+  background-color: rgb(25, 25, 80);
+  color: white;
+  justify-content:space-evenly;
+}
+.contact{
+  display: flex;
+  margin: 30px;
+}
+.contact div{
+  margin: 20px;
+}
+
+div.icon i{
+  border: solid 2px rgb(78, 78, 151);
+  border-radius: 70%;
+  background-color: rgb(40, 40, 109);
+  padding: 13px;
+  margin: 20px;
+  color: rgb(154, 154, 50);
+  width: 30px;
+  text-align: center;
+}
+section.home{
+  background-image: url("images/home.webp");
+}
+nav{
+  background-color: rgba(85, 84, 84,0.3);
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content:space-evenly;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li{
+text-align: center;
+  padding: 10px;
+  margin: 4px;
+  margin-right: 20px;
+}
+.vl{
+  border-right: solid 1px rgb(163, 162, 162);
+  height: 20px;
+  margin-top: 12px;
+}
+.home div i{
+  margin: 8px;
+  font-size: 20px;
+}
+.main{
+  margin-left: 360px;
+  margin-top: 160px;
+  margin-bottom: 30px;
+}
+.main p{
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  border-left:solid 4px yellow ;
+  background-color: rgba(25, 24, 24, 0.4);
+}
+.main h1{
+  margin-top: -5px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.main pre{
+  margin-top: -20px;
+  line-height: 20px;
+  color: white;
+}
+.main button{
+  padding: 10px;
+  width: 150px;
+  background-color: yellow;
+  border: none;
+  margin-bottom: 200px;
+}
